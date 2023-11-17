@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const HistoryTable = ({ orders }) => {
@@ -8,7 +9,7 @@ const HistoryTable = ({ orders }) => {
         <section>
             {
                 orders.map((order) =>
-                    <div key={order.id} className='box bg-white mt-4'>
+                    <div key={order.id} className='box bg-white mt-4 overflow-auto'>
                         <div className="flex items-start justify-between py-3 px-8">
                             <div className='flex items-start justify-between gap-10'>
                                 <div className="flex flex-col">
@@ -17,7 +18,7 @@ const HistoryTable = ({ orders }) => {
                                 </div>
                                 <div className="flex flex-col">
                                     <p className='p-text'>Date of placement</p>
-                                    <p className='info-text-black'>{order.placementDate}</p>
+                                    <p className='info-text-black whitespace-nowrap'>{order.placementDate}</p>
                                 </div>
                                 <div className="flex flex-col">
                                     <p className='p-text'>Amount</p>
@@ -25,7 +26,9 @@ const HistoryTable = ({ orders }) => {
                                 </div>
                             </div>
                             <div>
+                                <Link href="/order/orderDetailPage">
                                 <button className='bg-dark px-4 py-2 font-NotoSans font-[600] text-[16px] text-white-100 rounded-md'>View invoice</button>
+                                </Link>
                             </div>
                         </div>
                         <div className="">

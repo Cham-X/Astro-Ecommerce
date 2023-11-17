@@ -9,7 +9,7 @@ export default function OrderPageNavbar() {
               <button className='info-text-100'>Designers</button>
               <button className='info-text-100'>Categories</button>
           </div>
-          <div  className='flex gap-3 font-[600]  text-[#94A3B8] border-none px-2 py-1 rounded-md'>
+          <div  className='flex gap-3 font-[600]  text-[#94A3B8] bg-[#404752] border-none px-2 py-1 rounded-md'>
               <Image
                   src="/asset/search-svg.svg"
                   alt='search'

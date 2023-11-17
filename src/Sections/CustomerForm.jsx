@@ -65,7 +65,7 @@ const CustomerForm = () => {
         <label className='font-NotoSans text-xs px-4'>Billing address the same as shipping address</label>
       </div>
       <div className='py-2'>
-        <Link href="/order">
+        <Link href="/order/orderHistoryPage">
           <Button
             buttonText={"Pay $1,560"}
           />
