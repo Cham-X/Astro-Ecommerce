@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
       {isRoute &&
-        (<nav className="bg-dark flex items-center justify-between py-4 border-b border-gray-400 px-10 ">
+        (<nav className="bg-dark flex sticky top-0 left-0 items-center justify-between py-4 border-b border-gray-400 px-10 ">
           <div>
             <Link href="/">
               <h3 className="info-text">Astro Ecommerce </h3>
